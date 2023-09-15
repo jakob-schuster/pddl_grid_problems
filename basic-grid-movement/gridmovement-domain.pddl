@@ -1,25 +1,29 @@
-(define (domain gridMovement)
+(define (domain grid)
 
     (:requirements
         :strips
+        :typing
+    )
+
+    (:types
+        entity pos - object
+        movable tile - entity
+        wall - tile
     )
 
     (:predicates
-        (pos ?p)
-        (tile ?t)
-        (entity ?p)
-        (at ?e ?p)
-        (connected ?x ?y)
+        (connected ?p1 - pos ?p2 - pos)
+        (at ?x - entity ?p - pos)
     )
 
     (:action move
-        :parameters (?e ?from ?to)
-        :precondition (and 
-            (entity ?e)
-            (at ?e ?from)
-            (pos ?to) 
-            (connected ?from ?to)
+        :parameters (?x - movable ?from - pos ?to - pos)
+        :precondition (
+            and 
+                (at ?x ?from) 
+                (connected ?from ?to)
+                (not (exists (?w - wall) (at ?w ?to)))
         )
-        :effect (and (not (at ?e ?from)) (at ?e ?to))
+        :effect (and (at ?x ?to) (not (at ?x ?from)))
     )
 )
