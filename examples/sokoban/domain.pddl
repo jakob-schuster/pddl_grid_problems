@@ -2,7 +2,7 @@
     (:requirements :strips :typing :equality)
     (:types 
         pos tile - object
-        player wall goal block - tile
+        player wall goop block - tile
     )
     (:predicates
         (grid ?p - pos)
@@ -30,25 +30,23 @@
     )
     (:action push
         :parameters (
-            ?ply - player ?ply-from - pos ?ply-to - pos 
-            ?blk - block ?blk-from - pos ?blk-to - pos
+            ?ply - player ?ply-from - pos 
+            ?ply-to - pos 
+            ?blk - block ?blk-to - pos
         )
         :precondition (and 
             (at ?ply ?ply-from)
-            (at ?blk ?blk-from)
-            (= ?ply-to ?blk-from)
+            (at ?blk ?ply-to)
             (or 
-                (and (up ?ply-from ?ply-to) (up ?blk-from ?blk-to))
-                (and (down ?ply-from ?ply-to) (down ?blk-from ?blk-to))
-                (and (left ?ply-from ?ply-to) (left ?blk-from ?blk-to))
-                (and (right ?ply-from ?ply-to) (right ?blk-from ?blk-to))
+                (and (up ?ply-from ?ply-to) (up ?ply-to ?blk-to))
+                (and (down ?ply-from ?ply-to) (down ?ply-to ?blk-to))
+                (and (left ?ply-from ?ply-to) (left ?ply-to ?blk-to))
+                (and (right ?ply-from ?ply-to) (right ?ply-to ?blk-to))
             )
         )
         :effect (and
-            (not (at ?ply ?ply-from))
-            (at ?ply ?ply-to)
-            (not (at ?blk ?blk-from))
-            (at ?blk ?blk-to)
+            (at ?ply ?ply-to) (not (at ?ply ?ply-from))
+            (at ?blk ?blk-to) (not (at ?blk ?ply-to))
         )
     )
 )

@@ -14,14 +14,27 @@
             :priority 1
         )
     )
+    (:visual goal
+        :type predefine
+        :objects %g
+        :properties (
+            (prefabImage Null)
+            (showName TRUE)
+            (x Null)
+            (y Null)
+            (color RED)
+            (width 100)
+            (height 100)
+        )
+    )
     (:visual player
         :type predefine
         :objects %ply
         :properties (
             (prefabImage img-no-name)
             (showName TRUE)
-            (x 0)
-            (y 0)
+            (x Null)
+            (y Null)
             (color GREEN)
             (width 100)
             (height 100)
@@ -46,8 +59,8 @@
         :properties (
             (prefabImage img-no-name)
             (showName TRUE)
-            (x 0)
-            (y 0)
+            (x Null)
+            (y Null)
             (color RED)
             (width 100)
             (height 100)
