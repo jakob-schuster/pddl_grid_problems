@@ -6,6 +6,9 @@ Exploring the representation and visualisation of grid-based puzzles in [PDDL](h
 
 A number of specific games and puzzles modelled in PDDL and Planimation. Documentation on each game can be found in the readme for each example.
 
+Quick links:
+- [Sokoban](examples/sokoban)
+
 ## Helper Scripts
 
 Tools to assist in creating PDDL grid problem representations. Documentation on each tool is found in the respective tool's directory.
