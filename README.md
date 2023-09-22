@@ -7,7 +7,10 @@ Exploring the representation and visualisation of grid-based puzzles in [PDDL](h
 A number of specific games and puzzles modelled in PDDL and Planimation. Documentation on each game can be found in the readme for each example.
 
 Quick links:
+- [Bloxorz](examples/bloxorz)
+- [Lights Out](examples/lights-out)
 - [Sokoban](examples/sokoban)
+- [Traffic Rush](examples/traffic-rush)
 
 ## Helper Scripts
 
