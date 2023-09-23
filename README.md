@@ -33,6 +33,8 @@ Active contributors:
 - Richele Maryanto
 - Jakob Schuster
 
+Contact us via the GitHub Discussions tab.
+
 ## Coding Standards
 
 Practices we will generally follow:
