@@ -3,10 +3,8 @@
 Exploring the representation and visualisation of grid-based puzzles in [PDDL](https://en.wikipedia.org/wiki/Planning_Domain_Definition_Language) and [Planimation](https://planimation.planning.domains/).
 
 
-<center>
 <img src="https://prideout.net/blog/group_theory/Bloxorz.gif" alt="drawing" height="200"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Sokoban_ani.gif" alt="drawing" height="200"/>
-</center>
 
 ## Examples
 
