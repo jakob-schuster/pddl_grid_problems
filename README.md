@@ -1,6 +1,6 @@
 # PDDL Grid Problems
 
-Exploring the representation and visualisation of grid-based puzzles in [PDDL](https://en.wikipedia.org/wiki/Planning_Domain_Definition_Language) and [Planimation](https://planimation.planning.domains/).
+Exploring the representation and visualisation of grid-based puzzles in [PDDL](https://en.wikipedia.org/wiki/Planning_Domain_Definition_Language) and [Planimation](https://planimation.planning.domains/). A project for [COMP30022](https://handbook.unimelb.edu.au/2023/subjects/comp30022).
 
 <img src="https://prideout.net/blog/group_theory/Bloxorz.gif" alt="drawing" height="200"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Sokoban_ani.gif" alt="drawing" height="200"/>
@@ -23,6 +23,15 @@ We use [editor.planning.domains](http://editor.planning.domains/) as our PDDL ed
 ## Helper Scripts
 
 Tools to assist in creating PDDL grid problem representations. Documentation on each tool is found in the respective tool's directory.
+
+# Contributing
+
+Active contributors:
+- Liam Anthian
+- Reuben Cook 
+- Erich Huang
+- Richele Maryanto
+- Jakob Schuster
 
 ## Coding Standards
 
