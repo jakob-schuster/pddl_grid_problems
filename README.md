@@ -1,11 +1,8 @@
 # PDDL Grid Problems
 
 Exploring the representation and visualisation of grid-based puzzles in [PDDL](https://en.wikipedia.org/wiki/Planning_Domain_Definition_Language) and [Planimation](https://planimation.planning.domains/).
-
-![](https://prideout.net/blog/group_theory/Bloxorz.gif)
-![](https://camo.githubusercontent.com/3f8723cc862854e5321ffad1dad07abf4e519e554259938b99625d912f0de75f/687474703a2f2f7777772e6c69676874736f75742e69722f696d616765732f68656c702e676966)
-![](https://upload.wikimedia.org/wikipedia/commons/4/4b/Sokoban_ani.gif)
-
+<img src="https://prideout.net/blog/group_theory/Bloxorz.gif" alt="drawing" width="200"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Sokoban_ani.gif" alt="drawing" width="200"/>
 
 ## Examples
 
