@@ -40,11 +40,11 @@
     )
     
     (:visual pos
-        ::type predefine
+        :type predefine
         :objects %pos
         :properties (
             (prefabImage img-square)
-            (showName FALSE)
+            (showName TRUE)
             (x Null)
             (y Null)
             (color #F6F7EB)
