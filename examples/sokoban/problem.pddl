@@ -57,7 +57,7 @@
         (at w1 pos1_3)
     )
     (:goal
-        (forall (?g - goal) 
+        (forall (?g - goop) 
             (exists (?b - block) 
                 (exists (?p - pos)
                     (and
