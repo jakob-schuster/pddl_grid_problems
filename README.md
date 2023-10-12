@@ -44,4 +44,5 @@ Practices we will generally follow:
 - Predicate and action code will be indented such that all code in the following block is at the very least past this term.
 - `:requirements` will be imported in the domain file below the main parent domain definition.
 - Where possible, lines will be attempted to be kept at a suitable length - deemed 80 characters for now.
+- We will keep predicates and actions defined in camelCase as opposed to snake_case (chosen just for consistency) where possible. Some planimation features will require other specific formats (e.g. pos1_1) and these will be used strictly where necessary.
 - Comments will be placed before each non-obvious action and large code block explaining the purpose and reasoning behind the changed predicates and states. Precondition justification should be present when logic not immediately clear.
