@@ -1,10 +1,16 @@
 (define (problem flippuzzle-1)
-(:domain flippuzzle)
-(:objects a b c d e f g h i
-            ed1 ed2
-            node1-1 node1-2 node1-3 node2-1 node2-2 node2-3 node3-1 node3-2 node3-3
-)
-(:init (tile a) (tile b) (tile c) (tile d) (tile e) (tile f) (tile g) (tile h) (tile i)
+    (:domain flippuzzle)
+    
+    (:objects 
+        a b c d e f g h i
+        ed1 ed2
+        node1-1 node1-2 node1-3 node2-1 node2-2 node2-3 node3-1 node3-2 node3-3
+    )
+    
+    (:init 
+        (tile a) (tile b) (tile c) 
+        (tile d) (tile e) (tile f) 
+        (tile g) (tile h) (tile i)
         (edge ed1) (edge ed2)
         (position node1-1) (position node1-2) (position node1-3) 
         (position node2-1) (position node2-2) (position node2-3)
@@ -23,8 +29,11 @@
         (adj i f) (adj i h) (adj i ed1) (adj i ed2) ; corners have two edges
         
         (on a) (on f) (on g) (on i)
-)
-(:goal (and (on a) (on b) (on c) (on d) (on e) (on f) (on g) (on h) (on i))
-)
-
+    )
+    
+    (:goal 
+        (and 
+            (on a) (on b) (on c) (on d) (on e) (on f) (on g) (on h) (on i)
+        )
+    )
 )

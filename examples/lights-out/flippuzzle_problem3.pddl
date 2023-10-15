@@ -1,8 +1,12 @@
 (define (problem flippuzzle-2)
     (:domain flippuzzle)
-    (:objects a b c
-                ed1 ed2 ed3
-                node1-1 node1-2 node1-3)
+    
+    (:objects 
+        a b c
+        ed1 ed2 ed3
+        node1-1 node1-2 node1-3
+    )
+        
     (:init 
         (tile a) (tile b) (tile c)
         (edge ed1) (edge ed2) (edge ed3)
@@ -14,10 +18,12 @@
         
         (on a) (on c)
     )
-    (:goal (and 
-                (not(on a))
-                (not(on b))
-                (not(on c))
-           )
+    
+    (:goal 
+        (and 
+            (not(on a))
+            (not(on b))
+            (not(on c))
+        )
     )
 )

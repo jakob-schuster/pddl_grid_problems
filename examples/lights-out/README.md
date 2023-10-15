@@ -1,6 +1,6 @@
 # Lights Out
 
-[Editor Session](http://editor.planning.domains/#read_session=FAzPPT1FTe)
+[Editor Session](http://editor.planning.domains/#read_session=6mlKr6EFKb)
 
 Lights Out is a game consisting traditionally of a 5x5 grid of lights. The objective is to switch off all the lights, made difficult because each light cannot be toggled individually. When any light is pressed, it and all lights adjacent to it are toggled. 
 
