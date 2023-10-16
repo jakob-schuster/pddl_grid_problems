@@ -5,7 +5,7 @@
         ply1 - player
         blk1 - block
         w1 - wall
-        go - goop
+        but1 - button
     )
     (:init
         (grid pos1_1)
@@ -53,16 +53,17 @@
         
         (at ply1 pos1_1)
         (at blk1 pos2_2)
-        (at go pos3_3)
-        (at w1 pos1_3)
+        (at but1 pos1_3)
+        
+        (at w1 pos3_1)
     )
     (:goal
-        (forall (?g - goop) 
-            (exists (?b - block) 
-                (exists (?p - pos)
-                    (and
-                        (at ?g ?p)
-                        (at ?b ?p)
+        (forall (?but - button) 
+            (exists (?blk - block) 
+                (exists (?pos - pos)
+                    (and 
+                        (at ?but ?pos)
+                        (at ?blk ?pos)
                     )
                 )
             )
