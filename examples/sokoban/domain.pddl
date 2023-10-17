@@ -1,11 +1,13 @@
 (define (domain template)
     (:requirements :strips :typing :equality)
+    
     (:types 
         pos tile - object
         player wall button block - tile
     )
+    
     (:predicates
-        (grid ?p - pos)
+        (position ?p - pos)
         
         (up ?p1 - pos ?p2 - pos)
         (down ?p1 - pos ?p2 - pos)
@@ -14,6 +16,7 @@
         
         (at ?t - tile ?p - pos)
     )
+    
     (:action move
         :parameters (?p - player ?from - pos ?to - pos)
         :precondition (and
@@ -28,20 +31,7 @@
         )
         :effect (and (at ?p ?to) (not (at ?p ?from)))
     )
-    ; (:action move-block
-    ;     :parameters (?p - block ?from - pos ?to - pos)
-    ;     :precondition (and
-    ;         (at ?p ?from)
-    ;         (or 
-    ;             (up ?from ?to)
-    ;             (down ?from ?to)
-    ;             (left ?from ?to)
-    ;             (right ?from ?to)
-    ;         )
-    ;         (not (exists (?t - tile) (at ?t ?to)))
-    ;     )
-    ;     :effect (and (at ?p ?to) (not (at ?p ?from)))
-    ; )
+    
     (:action push
         :parameters (
             ?ply - player ?ply-from - pos ?ply-to - pos 
