@@ -1,6 +1,6 @@
 # Sokoban
 
-[Editor session](http://editor.planning.domains/#read_session=U7ENhOy3VC)
+[Editor session](http://editor.planning.domains/#read_session=vhs8kMhtut)
 
 Sokoban is a Japanese puzzle game, designed in 1981. Its title translates to 'warehouse keeper'. The player controls a character who must push every box onto every storage location. The boxes can be pushed, but not pulled; the challenge is to think several steps ahead, and avoid getting stuck in a state from which it is impossible to progress.
 
@@ -12,7 +12,4 @@ This was the first attempt at moving multiple objects at once. One predicate `(m
 
 # Todo
 
-- Animation file needs fixing - box-pushing breaks the Planimation
-- More levels of larger sizes
-- Test suite needs to be made
-- Images need to be made
+- Make more efficient

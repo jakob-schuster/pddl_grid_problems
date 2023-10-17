@@ -5,18 +5,18 @@
         ply1 - player
         blk1 - block
         w1 - wall
-        go - goop
+        but1 - button
     )
     (:init
-        (grid pos1_1)
-        (grid pos2_1)
-        (grid pos3_1)
-        (grid pos1_2)
-        (grid pos2_2)
-        (grid pos3_2)
-        (grid pos1_3)
-        (grid pos2_3)
-        (grid pos3_3)
+        (position pos1_1)
+        (position pos2_1)
+        (position pos3_1)
+        (position pos1_2)
+        (position pos2_2)
+        (position pos3_2)
+        (position pos1_3)
+        (position pos2_3)
+        (position pos3_3)
         
         (right pos1_1 pos2_1)
         (up pos1_1 pos1_2)
@@ -53,16 +53,17 @@
         
         (at ply1 pos1_1)
         (at blk1 pos2_2)
-        (at go pos3_3)
-        (at w1 pos1_3)
+        (at but1 pos1_3)
+        
+        (at w1 pos3_1)
     )
     (:goal
-        (forall (?g - goop) 
-            (exists (?b - block) 
-                (exists (?p - pos)
-                    (and
-                        (at ?g ?p)
-                        (at ?b ?p)
+        (forall (?but - button) 
+            (exists (?blk - block) 
+                (exists (?pos - pos)
+                    (and 
+                        (at ?but ?pos)
+                        (at ?blk ?pos)
                     )
                 )
             )
