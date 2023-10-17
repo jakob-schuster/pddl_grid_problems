@@ -1,6 +1,6 @@
 # Traffic Rush
 
-[Editor Session](http://editor.planning.domains/#read_session=PIsMje4Ago)
+[Editor Session](http://editor.planning.domains/#read_session=FfCGxvai7C)
 
 [Traffic Rush](https://en.wikipedia.org/wiki/Rush_Hour_(puzzle)) is a widely-known sliding-block puzzle, where the player must get the red car to the exit by sliding the vehicles around the free spaces on the grid.
 

@@ -1,21 +1,30 @@
 (define (problem template1)
     (:domain template)
     (:objects
-    
-        pos1_1 pos1_2 pos1_3 pos1_4 pos1_5 
-        pos2_1 pos2_2 pos2_3 pos2_4 pos2_5 
-        pos3_1 pos3_2 pos3_3 pos3_4 pos3_5 
-        pos4_1 pos4_2 pos4_3 pos4_4 pos4_5 
-        pos5_1 pos5_2 pos5_3 pos5_4 pos5_5 - pos
         
-        t1 t2 - tile
+        pos1_1 pos1_2 pos1_3 pos1_4 pos1_5 pos1_6 
+        pos2_1 pos2_2 pos2_3 pos2_4 pos2_5 pos2_6 
+        pos3_1 pos3_2 pos3_3 pos3_4 pos3_5 pos3_6 
+        pos4_1 pos4_2 pos4_3 pos4_4 pos4_5 pos4_6 
+        pos5_1 pos5_2 pos5_3 pos5_4 pos5_5 pos5_6 
+        pos6_1 pos6_2 pos6_3 pos6_4 pos6_5 pos6_6 - pos
+        
+        tw1 tw2 tw3 tw4 tw5 tw6 - tile
+        tr1 tr2 - tile
+        tb1 tb2 - tile
+        
+        
+        ty1 ty2 - tile
+        ; tg1 tg2 - tile
     )
     (:init
-        (position pos1_1)(position pos1_2)(position pos1_3)(position pos1_4)(position pos1_5)
-        (position pos2_1)(position pos2_2)(position pos2_3)(position pos2_4)(position pos2_5)
-        (position pos3_1)(position pos3_2)(position pos3_3)(position pos3_4)(position pos3_5)
-        (position pos4_1)(position pos4_2)(position pos4_3)(position pos4_4)(position pos4_5)
-        (position pos5_1)(position pos5_2)(position pos5_3)(position pos5_4)(position pos5_5)
+        (position pos1_1)(position pos1_2)(position pos1_3)(position pos1_4)(position pos1_5)(position pos1_6)
+        (position pos2_1)(position pos2_2)(position pos2_3)(position pos2_4)(position pos2_5)(position pos2_6)
+        (position pos3_1)(position pos3_2)(position pos3_3)(position pos3_4)(position pos3_5)(position pos3_6)
+        (position pos4_1)(position pos4_2)(position pos4_3)(position pos4_4)(position pos4_5)(position pos4_6)
+        (position pos5_1)(position pos5_2)(position pos5_3)(position pos5_4)(position pos5_5)(position pos5_6)
+        (position pos6_1)(position pos6_2)(position pos6_3)(position pos6_4)(position pos6_5)(position pos6_6)
+        
         
         (right pos1_1 pos2_1)
         (up pos1_1 pos1_2)
@@ -30,6 +39,9 @@
         (up pos1_4 pos1_5)
         (right pos1_5 pos2_5)
         (down pos1_5 pos1_4)
+        (up pos1_5 pos1_6)
+        (right pos1_6 pos2_6)
+        (down pos1_6 pos1_5)
         (left pos2_1 pos1_1)
         (right pos2_1 pos3_1)
         (up pos2_1 pos2_2)
@@ -48,6 +60,10 @@
         (left pos2_5 pos1_5)
         (right pos2_5 pos3_5)
         (down pos2_5 pos2_4)
+        (up pos2_5 pos2_6)
+        (left pos2_6 pos1_6)
+        (right pos2_6 pos3_6)
+        (down pos2_6 pos2_5)
         (left pos3_1 pos2_1)
         (right pos3_1 pos4_1)
         (up pos3_1 pos3_2)
@@ -66,6 +82,10 @@
         (left pos3_5 pos2_5)
         (right pos3_5 pos4_5)
         (down pos3_5 pos3_4)
+        (up pos3_5 pos3_6)
+        (left pos3_6 pos2_6)
+        (right pos3_6 pos4_6)
+        (down pos3_6 pos3_5)
         (left pos4_1 pos3_1)
         (right pos4_1 pos5_1)
         (up pos4_1 pos4_2)
@@ -84,25 +104,85 @@
         (left pos4_5 pos3_5)
         (right pos4_5 pos5_5)
         (down pos4_5 pos4_4)
+        (up pos4_5 pos4_6)
+        (left pos4_6 pos3_6)
+        (right pos4_6 pos5_6)
+        (down pos4_6 pos4_5)
         (left pos5_1 pos4_1)
+        (right pos5_1 pos6_1)
         (up pos5_1 pos5_2)
         (left pos5_2 pos4_2)
+        (right pos5_2 pos6_2)
         (down pos5_2 pos5_1)
         (up pos5_2 pos5_3)
         (left pos5_3 pos4_3)
+        (right pos5_3 pos6_3)
         (down pos5_3 pos5_2)
         (up pos5_3 pos5_4)
         (left pos5_4 pos4_4)
+        (right pos5_4 pos6_4)
         (down pos5_4 pos5_3)
         (up pos5_4 pos5_5)
         (left pos5_5 pos4_5)
+        (right pos5_5 pos6_5)
         (down pos5_5 pos5_4)
+        (up pos5_5 pos5_6)
+        (left pos5_6 pos4_6)
+        (right pos5_6 pos6_6)
+        (down pos5_6 pos5_5)
+        (left pos6_1 pos5_1)
+        (up pos6_1 pos6_2)
+        (left pos6_2 pos5_2)
+        (down pos6_2 pos6_1)
+        (up pos6_2 pos6_3)
+        (left pos6_3 pos5_3)
+        (down pos6_3 pos6_2)
+        (up pos6_3 pos6_4)
+        (left pos6_4 pos5_4)
+        (down pos6_4 pos6_3)
+        (up pos6_4 pos6_5)
+        (left pos6_5 pos5_5)
+        (down pos6_5 pos6_4)
+        (up pos6_5 pos6_6)
+        (left pos6_6 pos5_6)
+        (down pos6_6 pos6_5)
         
-        (group-2 t1 t2)
-        (at t1 pos1_1)
-        (at t2 pos2_1)
+        (at tw1 pos1_1)
+        (at tw2 pos1_2)
+        (at tw3 pos5_6)
+        (at tw4 pos4_6)
+        (at tw5 pos6_1)
+        (at tw6 pos6_2)
+        (wall tw1)
+        (wall tw2)
+        (wall tw3)
+        (wall tw4)
+        (wall tw5)
+        (wall tw6)
+    
+        (group-2 tr1 tr2)
+        (red tr1)
+        (red tr2)
+        (at tr1 pos1_4)
+        (at tr2 pos2_4)
+        
+        (group-2 ty1 ty2)
+        (yellow ty1)
+        (yellow ty2)
+        (at ty1 pos3_4)
+        (at ty2 pos3_3)
+        
+        (group-2 tb1 tb2)
+        (blue tb1)
+        (blue tb2)
+        (at tb1 pos5_4)
+        (at tb2 pos5_5)
+        
+        ; (group-2 tg1 tg2)
+        ; (at tg1 pos2_2)
+        ; (at tg2 pos3_2)
     )
     (:goal
-        (at t2 pos3_3)
+        (at tr2 pos6_4)
     )
 )

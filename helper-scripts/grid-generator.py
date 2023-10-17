@@ -24,4 +24,4 @@ def create_grid(width: int, height: int, name_prefix: str) -> str:
                 result += f"(up {grid[y][x]} {grid[y + 1][x]})\n"
     return result
 
-print(create_grid(8,8,"pos"))
+print(create_grid(6,6,"pos"))
