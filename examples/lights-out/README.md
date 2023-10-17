@@ -1,6 +1,6 @@
 # Lights Out
 
-[Editor Session](http://editor.planning.domains/#read_session=6mlKr6EFKb)
+[Editor Session](http://editor.planning.domains/#read_session=BUOU9QrGLE)
 
 Lights Out is a game consisting traditionally of a 5x5 grid of lights. The objective is to switch off all the lights, made difficult because each light cannot be toggled individually. When any light is pressed, it and all lights adjacent to it are toggled. 
 
@@ -11,3 +11,5 @@ Lights Out is a game consisting traditionally of a 5x5 grid of lights. The objec
 For this problem, the challenge was coming up with a single move that expresses toggling, given the adjacency rules.
 
 # Todo
+
+- Make more efficient
