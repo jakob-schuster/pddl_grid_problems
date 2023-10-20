@@ -31,7 +31,7 @@
         (group-2 ?t1 - tile ?t2 - tile)
         (group-3 ?t1 - tile ?t2 - tile ?t3 - tile)
     )
-    (:action move-2
+    (:action move_2
         :parameters (
             ?t1 - tile ?t1-from - pos ?t1-to - pos
             ?t2 - tile ?t2-from - pos ?t2-to - pos

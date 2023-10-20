@@ -27,7 +27,7 @@
         (position ?t - tile)
     )   
   
-    (:action toggleplus
+    (:action toggle_plus
         :parameters (?t - tile ?a1 - tile ?a2 - tile ?a3 - tile ?a4 - tile)
                  
         :precondition (
