@@ -1,3 +1,18 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Traffic Rush
+;;; Traffic Rush game playing domain
+;;;
+;;; Authored by "Team 103", Unimelb 2023 Sem 2
+;;;
+;;; Description:
+;;; Traffic Rush, or "Rush Hour" as the actually sold game is known, is a grid 
+;;; based puzzle game in which there exists a set of objects of varying tile
+;;; length, called cars, which can only be moved around along one axis of the 2D
+;;; grid. The aim of the game is to move the cars around to allow one key car to
+;;; reach a goal position. 
+;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 (define (domain template)
     (:requirements :strips :typing)
     (:types 

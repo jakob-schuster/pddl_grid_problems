@@ -1,3 +1,18 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Sokoban
+;;; Sokoban game playing domain
+;;;
+;;; Authored by "Team 103", Unimelb 2023 Sem 2
+;;;
+;;; Description:
+;;; Sokoban is a 2D grid based Japanese puzzle game, designed in 1981. Its title 
+;;; translates to 'warehouse keeper'. The player controls a character who must 
+;;; push every box onto every storage location. The boxes can be pushed, but not
+;;; pulled; the challenge is to think several steps ahead, and avoid getting 
+;;; stuck in a state from which it is impossible to progress.
+;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 (define (domain template)
     (:requirements :strips :typing :equality)
     

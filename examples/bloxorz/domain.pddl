@@ -1,3 +1,18 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Bloxorz
+;;; Bloxorz game playing domain
+;;;
+;;; Authored by "Team 103", Unimelb 2023 Sem 2
+;;;
+;;; Description:
+;;; Bloxorz is traditionally a pseudo 3D puzzle game where a 2 by 1 rectangular
+;;; prisim flips and rotates around a tighly designed 2D course to orient itself
+;;;	correctly to fall into a 1 by 1 hole. The trick with representing this as a 
+;;; 2D grid based problem is finding the optimal way to model the block standing
+;;; vertically and then represent this visually.
+;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 (define (domain grid)
 
     (:requirements
