@@ -12,6 +12,6 @@ This problem is unique in that it requires representing a number of irregularly-
 
 # Todo
 
-- Add collisions
+- Get cars of length 3 working alongside cars of length 2
 - Model some levels
-- Add graphics
+- Add proper graphics
